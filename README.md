@@ -23,25 +23,19 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/gpt-blessings-generator.git
    cd gpt-blessings-generator
 Install the dependencies:
-
-bash
-Copy code
 npm install
+
 Set up environment variables:
 
 Ensure you have a .env file with the following variables:
-
-plaintext
-Copy code
 PORT=3000
 OPEN_AI_KEY=your_openai_api_key_here
+
 Replace your_openai_api_key_here with your actual OpenAI API key.
 
 Run the application:
-
-bash
-Copy code
 node app.js
+
 Visit the application:
 
 Open your browser and navigate to http://localhost:3000.
@@ -68,11 +62,10 @@ The application uses environment variables for configuration. Set these in a .en
 PORT: The port number on which the server will run.
 OPEN_AI_KEY: Your OpenAI API key for authentication.
 Example:
-
-plaintext
-Copy code
 PORT=3000
 OPEN_AI_KEY=your_openai_api_key_here
+
+
 API Endpoints
 GET /
 Description: Renders the homepage.
@@ -91,8 +84,6 @@ Response:
 
 blessings (array): An array of three generated blessing options.
 Example Request:
-http
-Copy code
 POST /generate-blessing
 Content-Type: application/json
 
@@ -104,8 +95,6 @@ Content-Type: application/json
   "length": "Short"
 }
 Example Response:
-json
-Copy code
 {
   "blessings": [
     "Here's a funny little rhyme for your 30th birthday...",
@@ -126,34 +115,6 @@ Length
 Type of greeting
 Example Test Cases:
 
-Test Case 1:
-
-javascript
-Copy code
-{
-  event: 'יום הולדת',
-  age: 4,
-  type: 'שיר',
-  mood: 'מצחיקה',
-  length: 'קצר',
-  expected: 'כתוב לי ברכה ליום הולדת לגיל 4 באוירה מצחיקה באורך קצר כשיר'
-}
-Test Case 2:
-
-javascript
-Copy code
-{
-  event: 'חתונה',
-  type: 'מכתב',
-  mood: 'שמחה',
-  length: 'ארוך',
-  expected: 'כתוב לי ברכה לחתונה באוירה שמחה באורך ארוך כמכתב'
-}
-If all test cases pass, you will see a message confirming their success:
-
-bash
-Copy code
-All test cases passed!
 Technologies Used
 Node.js: JavaScript runtime environment for server-side applications.
 Express.js: Web application framework for building RESTful APIs.

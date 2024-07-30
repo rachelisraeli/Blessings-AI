@@ -92,8 +92,7 @@ Description: Renders the homepage.
 
 Response: HTML page with a form for inputting blessing specifications.
 
-#
-POST /generate-blessing
+#POST /generate-blessing
 
 Description: Generates a blessing based on user input.
 
@@ -153,4 +152,8 @@ OpenAI: Integration with OpenAI's GPT-3.5-turbo for generating creative text.
 
 EJS: Embedded JavaScript templating for rendering HTML views.
 
+<<<<<<< HEAD
 dotenv: Module for loading environment variables from a .env file.
+=======
+dotenv: Module for loading environment variables from a .env file.
+>>>>>>> fe5a42dfcd2f910d7bae6a1433787f4aa22b1018

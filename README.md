@@ -22,6 +22,7 @@ To run this project locally, follow these steps:
    ```
    git clone https://github.com/yourusername/gpt-blessings-generator.git
    cd gpt-blessings-generator
+   
 Install the dependencies:
 ```
 npm install
@@ -47,6 +48,7 @@ Visit the application:
 Open your browser and navigate to http://localhost:3000.
 
 Usage
+
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
 Home Page: Navigate to the home page, where you can fill out a form with the desired specifications for the blessing.
@@ -68,10 +70,13 @@ Generate Blessings: Click the "Generate" button to receive three different bless
 Review Blessings: Choose the one you like best and enjoy!
 
 Environment Variables
+
 The application uses environment variables for configuration. Set these in a .env file in the root of your project:
 
 PORT: The port number on which the server will run.
+
 OPEN_AI_KEY: Your OpenAI API key for authentication.
+
 Example:
 ```
 PORT=3000
@@ -84,6 +89,7 @@ API Endpoints
 GET /
 ```
 Description: Renders the homepage.
+
 Response: HTML page with a form for inputting blessing specifications.
 
 ```
@@ -104,7 +110,10 @@ mood (string): The mood of the blessing (e.g., funny, joyful).
 length (string, optional): The length of the blessing (e.g., short, long).
 
 Response:
-blessings (array): An array of three generated blessing options.
+
+blessings (array):
+An array of three generated blessing options.
+
 Example Request:
 ```
 POST /generate-blessing
@@ -130,11 +139,17 @@ Example Response:
 }
 ```
 Prompt Testing
+
 The code includes a testPromptConstruction function that verifies prompt construction for different use cases. This helps ensure that the correct prompts are sent to the OpenAI API.
 
 Technologies Used
+
 Node.js: JavaScript runtime environment for server-side applications.
+
 Express.js: Web application framework for building RESTful APIs.
+
 OpenAI: Integration with OpenAI's GPT-3.5-turbo for generating creative text.
+
 EJS: Embedded JavaScript templating for rendering HTML views.
+
 dotenv: Module for loading environment variables from a .env file.

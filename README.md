@@ -19,7 +19,7 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
 
-   ```bash
+   ```
    git clone https://github.com/yourusername/gpt-blessings-generator.git
    cd gpt-blessings-generator
 Install the dependencies:
@@ -28,13 +28,17 @@ npm install
 Set up environment variables:
 
 Ensure you have a .env file with the following variables:
+```
 PORT=3000
 OPEN_AI_KEY=your_openai_api_key_here
+```
 
 Replace your_openai_api_key_here with your actual OpenAI API key.
 
 Run the application:
+```
 node app.js
+```
 
 Visit the application:
 
@@ -62,15 +66,22 @@ The application uses environment variables for configuration. Set these in a .en
 PORT: The port number on which the server will run.
 OPEN_AI_KEY: Your OpenAI API key for authentication.
 Example:
+```
 PORT=3000
 OPEN_AI_KEY=your_openai_api_key_here
+```
 
 
 API Endpoints
+```
 GET /
+```
 Description: Renders the homepage.
 Response: HTML page with a form for inputting blessing specifications.
+
+```
 POST /generate-blessing
+```
 Description: Generates a blessing based on user input.
 
 Request Body:

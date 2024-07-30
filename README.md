@@ -47,7 +47,7 @@ Visit the application:
 
 Open your browser and navigate to http://localhost:3000.
 
-Usage
+##Usage
 
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
@@ -84,17 +84,17 @@ OPEN_AI_KEY=your_openai_api_key_here
 ```
 
 
-API Endpoints
-```
-GET /
-```
+#API Endpoints
+
+#GET /
+
 Description: Renders the homepage.
 
 Response: HTML page with a form for inputting blessing specifications.
 
-```
+#
 POST /generate-blessing
-```
+
 Description: Generates a blessing based on user input.
 
 Request Body:
@@ -109,12 +109,12 @@ mood (string): The mood of the blessing (e.g., funny, joyful).
 
 length (string, optional): The length of the blessing (e.g., short, long).
 
-Response:
+#Response:
 
 blessings (array):
 An array of three generated blessing options.
 
-Example Request:
+##Example Request:
 ```
 POST /generate-blessing
 ```
@@ -128,7 +128,8 @@ Content-Type: application/json
   "length": "Short"
 }
 ```
-Example Response:
+
+##Example Response:
 ```
 {
   "blessings": [
@@ -142,7 +143,7 @@ Prompt Testing
 
 The code includes a testPromptConstruction function that verifies prompt construction for different use cases. This helps ensure that the correct prompts are sent to the OpenAI API.
 
-Technologies Used
+##Technologies Used
 
 Node.js: JavaScript runtime environment for server-side applications.
 

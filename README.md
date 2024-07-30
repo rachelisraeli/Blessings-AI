@@ -23,7 +23,9 @@ To run this project locally, follow these steps:
    git clone https://github.com/yourusername/gpt-blessings-generator.git
    cd gpt-blessings-generator
 Install the dependencies:
+```
 npm install
+```
 
 Set up environment variables:
 
@@ -52,10 +54,15 @@ Home Page: Navigate to the home page, where you can fill out a form with the des
 Form Fields: Fill out the following fields:
 
 Event: The occasion for which the blessing is generated (e.g., Birthday, Wedding).
+
 Age: (Optional) Age of the recipient.
+
 Type: The style of the blessing (e.g., Poem, Letter).
+
 Mood: The desired mood of the blessing (e.g., Funny, Joyful).
+
 Length: (Optional) The length of the blessing (e.g., Short, Long).
+
 Generate Blessings: Click the "Generate" button to receive three different blessing options.
 
 Review Blessings: Choose the one you like best and enjoy!
@@ -87,17 +94,23 @@ Description: Generates a blessing based on user input.
 Request Body:
 
 event (string): The event for which the blessing is generated.
-age (number, optional): The age of the recipient.
-type (string): The type of blessing (e.g., poem, letter).
-mood (string): The mood of the blessing (e.g., funny, joyful).
-length (string, optional): The length of the blessing (e.g., short, long).
-Response:
 
+age (number, optional): The age of the recipient.
+
+type (string): The type of blessing (e.g., poem, letter).
+
+mood (string): The mood of the blessing (e.g., funny, joyful).
+
+length (string, optional): The length of the blessing (e.g., short, long).
+
+Response:
 blessings (array): An array of three generated blessing options.
 Example Request:
+```
 POST /generate-blessing
+```
 Content-Type: application/json
-
+```
 {
   "event": "Birthday",
   "age": 30,
@@ -105,7 +118,9 @@ Content-Type: application/json
   "mood": "Funny",
   "length": "Short"
 }
+```
 Example Response:
+```
 {
   "blessings": [
     "Here's a funny little rhyme for your 30th birthday...",
@@ -113,18 +128,9 @@ Example Response:
     "Turning 30 is just the start, may it be filled with blessings..."
   ]
 }
+```
 Prompt Testing
 The code includes a testPromptConstruction function that verifies prompt construction for different use cases. This helps ensure that the correct prompts are sent to the OpenAI API.
-
-Running Tests:
-The function testPromptConstruction() runs automatically when the application starts. It checks:
-
-Event type
-Age
-Mood
-Length
-Type of greeting
-Example Test Cases:
 
 Technologies Used
 Node.js: JavaScript runtime environment for server-side applications.

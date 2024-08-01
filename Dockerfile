@@ -7,5 +7,6 @@ COPY . .
 EXPOSE 8000
 RUN chown -R node /usr/src/app
 USER node
+ENV OPEN_AI_KEY=${OPEN_AI_KEY}
 CMD ["npm", "start"]
 #CMD ["node", "server.js"]

@@ -21,10 +21,10 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
 
-   
-   `git clone https://github.com/yourusername/gpt-blessings-generator.git
-   cd gpt-blessings-generator`
-   
+   ```
+   git clone https://github.com/yourusername/gpt-blessings-generator.git
+   cd gpt-blessings-generator
+   ```
 
 
 2. Install the dependencies:

@@ -1,4 +1,4 @@
-# GPT Blessings Generator
+# AI Blessings Generator
 
 Welcome to the **GPT Blessings Generator**!
 
@@ -21,9 +21,10 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
 
-   ```bash
+   ```
    git clone https://github.com/yourusername/gpt-blessings-generator.git
    cd gpt-blessings-generator
+   ```
 
 
 Install the dependencies:

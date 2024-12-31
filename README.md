@@ -55,19 +55,22 @@ Open your browser and navigate to http://localhost:3000.
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
 **Home Page:**
+
 Navigate to the home page, where you can fill out a form with the desired specifications for the blessing.
 
-**Form Fields:** Fill out the following fields:
+**Form Fields:**
 
-**Event:** The occasion for which the blessing is generated (e.g., Birthday, Wedding).
+Fill out the following fields:
 
-**Age:** (Optional) Age of the recipient.
+`Event`: The occasion for which the blessing is generated (e.g., Birthday, Wedding).
 
-**Type:** The style of the blessing (e.g., Poem, Letter).
+`Age`: (Optional) Age of the recipient.
 
-**Mood:** The desired mood of the blessing (e.g., Funny, Joyful).
+`Type`: The style of the blessing (e.g., Poem, Letter).
 
-**Length:** (Optional) The length of the blessing (e.g., Short, Long).
+`Mood`: The desired mood of the blessing (e.g., Funny, Joyful).
+
+`Length`: (Optional) The length of the blessing (e.g., Short, Long).
 
 **Generate Blessings:**
 Click the "Generate" button to receive three different blessing options.

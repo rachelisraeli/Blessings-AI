@@ -54,23 +54,23 @@ Open your browser and navigate to http://localhost:3000.
 ## Usage
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
-**Home Page:**
+### Home Page:
 
 Navigate to the home page, where you can fill out a form with the desired specifications for the blessing.
 
-**Form Fields:**
+### Form Fields:
 
 Fill out the following fields:
 
-`Event`: The occasion for which the blessing is generated (e.g., Birthday, Wedding).
+`Event` : The occasion for which the blessing is generated (e.g., Birthday, Wedding).
 
-`Age`: (Optional) Age of the recipient.
+`Age` : (Optional) Age of the recipient.
 
-`Type`: The style of the blessing (e.g., Poem, Letter).
+`Type` : The style of the blessing (e.g., Poem, Letter).
 
-`Mood`: The desired mood of the blessing (e.g., Funny, Joyful).
+`Mood` : The desired mood of the blessing (e.g., Funny, Joyful).
 
-`Length`: (Optional) The length of the blessing (e.g., Short, Long).
+`Length` : (Optional) The length of the blessing (e.g., Short, Long).
 
 **Generate Blessings:**
 Click the "Generate" button to receive three different blessing options.
@@ -82,9 +82,9 @@ Choose the one you like best and enjoy!
 
 The application uses environment variables for configuration. Set these in a .env file in the root of your project:
 
-`PORT`:The port number on which the server will run.
+`PORT` :The port number on which the server will run.
 
-`OPEN_AI_KEY`: Your OpenAI API key for authentication
+`OPEN_AI_KEY` : Your OpenAI API key for authentication
 
 Example:
 ```
@@ -105,13 +105,13 @@ Description: Generates a blessing based on user input.
 
 ### Request Body:
 
-`event (string)`: The event for which the blessing is generated.
+`event (string)` : The event for which the blessing is generated.
 
 `age (number)` optional: The age of the recipient.
 
-`type (string)`: The type of blessing (e.g., poem, letter).
+`type (string)` : The type of blessing (e.g., poem, letter).
 
-`mood (string)`: The mood of the blessing (e.g., funny, joyful).
+`mood (string)` : The mood of the blessing (e.g., funny, joyful).
 
 `length (string)` (optional): The length of the blessing (e.g., short, long).
 
@@ -119,6 +119,7 @@ Description: Generates a blessing based on user input.
 
 blessings (array): An array of three generated blessing options.
 
+## Prompt Testing
 ### Example Request:
 POST /generate-blessing
 

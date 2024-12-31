@@ -28,30 +28,30 @@ To run this project locally, follow these steps:
 
 
 2. Install the dependencies:
-```
-npm install
-```
+   ```
+   npm install
+   ```
 
 3. Set up environment variables:
 
    Ensure you have a .env file with the following variables:
-```
-PORT=8000
-OPEN_AI_KEY=your_openai_api_key_here
-```
+   ```
+   PORT=8000
+   OPEN_AI_KEY=your_openai_api_key_here
+   ```
 
    Replace your_openai_api_key_here with your actual OpenAI API key.
 
 4. Run the application:
-```
-node app.js
-```
+   ```
+   node app.js
+   ```
 
 **Visit the application:**
 
 Open your browser and navigate to http://localhost:3000.
 
-Usage
+## Usage
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
 **Home Page:**
@@ -75,13 +75,13 @@ Click the "Generate" button to receive three different blessing options.
 **Review Blessings:**
 Choose the one you like best and enjoy!
 
-Environment Variables
+## Environment Variables
 
 The application uses environment variables for configuration. Set these in a .env file in the root of your project:
 
-PORT: The port number on which the server will run.
+`PORT`:The port number on which the server will run.
 
-OPEN_AI_KEY: Your OpenAI API key for authentication
+`OPEN_AI_KEY`: Your OpenAI API key for authentication
 
 Example:
 ```
@@ -102,15 +102,15 @@ Description: Generates a blessing based on user input.
 
 ### Request Body:
 
-event (string): The event for which the blessing is generated.
+`event (string)`: The event for which the blessing is generated.
 
-age (number, optional): The age of the recipient.
+`age (number)` optional: The age of the recipient.
 
-type (string): The type of blessing (e.g., poem, letter).
+`type (string)`: The type of blessing (e.g., poem, letter).
 
-mood (string): The mood of the blessing (e.g., funny, joyful).
+`mood (string)`: The mood of the blessing (e.g., funny, joyful).
 
-length (string, optional): The length of the blessing (e.g., short, long).
+`length (string)` (optional): The length of the blessing (e.g., short, long).
 
 ### Response:
 

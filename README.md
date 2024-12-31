@@ -19,7 +19,7 @@ The server receives input from a client-side form and creates a request to OpenA
 
 To run this project locally, follow these steps:
 
-1. **Clone the repository:**
+1. Clone the repository:
 
    ```
    git clone https://github.com/yourusername/gpt-blessings-generator.git
@@ -27,50 +27,53 @@ To run this project locally, follow these steps:
    ```
 
 
-Install the dependencies:
+2. Install the dependencies:
 ```
 npm install
 ```
 
-Set up environment variables:
+3. Set up environment variables:
 
-Ensure you have a .env file with the following variables:
+   Ensure you have a .env file with the following variables:
 ```
 PORT=8000
 OPEN_AI_KEY=your_openai_api_key_here
 ```
 
-Replace your_openai_api_key_here with your actual OpenAI API key.
+   Replace your_openai_api_key_here with your actual OpenAI API key.
 
-Run the application:
+4. Run the application:
 ```
 node app.js
 ```
 
-Visit the application:
+**Visit the application:**
 
 Open your browser and navigate to http://localhost:3000.
 
 Usage
 This application allows users to generate blessings by specifying several parameters like event type, age, mood, and length.
 
-Home Page: Navigate to the home page, where you can fill out a form with the desired specifications for the blessing.
+**Home Page:**
+Navigate to the home page, where you can fill out a form with the desired specifications for the blessing.
 
-Form Fields: Fill out the following fields:
+**Form Fields:** Fill out the following fields:
 
-Event: The occasion for which the blessing is generated (e.g., Birthday, Wedding).
+**Event:** The occasion for which the blessing is generated (e.g., Birthday, Wedding).
 
-Age: (Optional) Age of the recipient.
+**Age:** (Optional) Age of the recipient.
 
-Type: The style of the blessing (e.g., Poem, Letter).
+**Type:** The style of the blessing (e.g., Poem, Letter).
 
-Mood: The desired mood of the blessing (e.g., Funny, Joyful).
+**Mood:** The desired mood of the blessing (e.g., Funny, Joyful).
 
-Length: (Optional) The length of the blessing (e.g., Short, Long).
+**Length:** (Optional) The length of the blessing (e.g., Short, Long).
 
-Generate Blessings: Click the "Generate" button to receive three different blessing options.
+**Generate Blessings:**
+Click the "Generate" button to receive three different blessing options.
 
-Review Blessings: Choose the one you like best and enjoy!
+**Review Blessings:**
+Choose the one you like best and enjoy!
 
 Environment Variables
 
